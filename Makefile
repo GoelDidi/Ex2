@@ -1,5 +1,5 @@
 CC = gcc
-FLAGS = -wall -g
+FLAGS = -Wall -g
 AllF = connections main.o my_mat.o
 
 all: main.o my_mat.o
@@ -8,7 +8,7 @@ all: main.o my_mat.o
 main.o: main.c my_mat.h
 	$(CC) $(FLAGS) -c main.c
 
-my_mat.o: my_mat.c ma_mat.h
+my_mat.o: my_mat.c my_mat.h
 	$(CC) $(FLAGS) -c my_mat.c
 
 clean:

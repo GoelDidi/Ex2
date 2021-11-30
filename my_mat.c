@@ -14,12 +14,12 @@ void function_1(){
 
 void function_2(){
     int i, j;
-    scanf("%d%d", &i, &j)
+    scanf("%d%d", &i, &j);
         if(Matrix[i][j] != 0){
             printf("True\n");
         }
         else{
-            printf("False\n")
+            printf("False\n");
         }
 }
 
@@ -35,9 +35,9 @@ void function_3(){
 }
 
 void algorithm(){
-   for (int k = 0; k < SizeOfMat; k++){
-        for (int i = 0; i < SizeOfMat; i++){
-            for (int j = 0; j < SizeOfMat; j++){
+   for (int k = 0; k < SizeMat; k++){
+        for (int i = 0; i < SizeMat; i++){
+            for (int j = 0; j < SizeMat; j++){
                 if (i == j){
                     Matrix[i][i] = 0;
                 }
